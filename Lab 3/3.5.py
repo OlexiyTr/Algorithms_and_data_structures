@@ -1,5 +1,3 @@
-from math import sin
-
 def solve(f, c, a, b):
     left = a
     right = b

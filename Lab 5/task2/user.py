@@ -7,7 +7,7 @@
 def init():
     pass
 
-max_size = 100000
+max_size = 6000
 current_size = 0
 keys = [None] * max_size
 values = [None] * max_size
@@ -16,17 +16,15 @@ def pr():
     global max_size, current_size
     print('coll', current_size/max_size*100)
 
+
 def hash(key):
     hashsum = 0
     N = 31
-    M = 99991
-
-    '''for idx, c in enumerate(key[:6]):
-        hashsum += (idx + len(key)) ** ord(c)
-        hashsum = hashsum % M'''
+    M = 5987
     for i in range(len(key)):
         hashsum = hashsum * N + ord(key[i])
     return hashsum % M
+
 
 def addBook(author, title):
     """ Додає книгу до бібліотеки.

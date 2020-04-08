@@ -1,3 +1,16 @@
-﻿  9.3.cpp
+﻿  9.6.cpp
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(101): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(82): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(83): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(84): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(91): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 9\9\9\9.6.cpp(94): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
   9.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\Lab 9\9\Debug\9.exe
   9.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\Lab 9\9\Debug\9.pdb (Full PDB)

@@ -1,0 +1,13 @@
+﻿  15.4(3983).cpp
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 15\15\15\15.4(3983).cpp(19): warning C4018: '<': signed/unsigned mismatch
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 15\15\15\15.4(3983).cpp(29): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 15\15\15\15.4(3983).cpp(32): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 15\15\15\15.4(3983).cpp(38): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+  15.3(2923)(no recursive, version 2).cpp
+c:\program1\python\algorithm\algorithms_and_data_structures\lab 15\15\15\15.3(2923)(no recursive, version 2).cpp(15): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  15.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\Lab 15\15\Debug\15.exe
+  15.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\Lab 15\15\Debug\15.pdb (Full PDB)

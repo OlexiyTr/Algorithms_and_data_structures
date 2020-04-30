@@ -1,0 +1,9 @@
+﻿  10.4.cpp
+c:\program1\python\algorithm\algorithms_and_data_structures\11\11\10.4.cpp(39): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\11\11\10.4.cpp(42): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+c:\program1\python\algorithm\algorithms_and_data_structures\11\11\10.4.cpp(44): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
+  11.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\11\Debug\11.exe
+  11.vcxproj -> C:\Program1\Python\Algorithm\Algorithms_and_data_structures\11\Debug\11.pdb (Full PDB)

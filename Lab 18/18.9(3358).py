@@ -27,8 +27,16 @@ class PQElement:
     def item(self): return self.mItem
     def __str__(self): return "{} {}".format(self.mItem, self.mPriority)
     def __le__(self, other): return self.mPriority <= other.mPriority
-    def __lt__(self, other): return self.mPriority < other.mPriority
-    def __gt__(self, other): return self.mPriority > other.mPriority
+    def __lt__(self, other):
+        if self.mPriority == other.mPriority:
+            return int(self.mItem) > int(other.mItem)
+        else:
+            return self.mPriority < other.mPriority
+    def __gt__(self, other):
+        if self.mPriority == other.mPriority:
+            return int(self.mItem) < int(other.mItem)
+        else:
+            return self.mPriority > other.mPriority
     def __ge__(self, other): return self.mPriority >= other.mPriority
 
 class Heap:
@@ -112,16 +120,20 @@ class PriorityQueue(Heap):
 
     def insert(self, *k):
         el = PQElement(k[0], k[1])
+        if k[0] in self:
+            self.decreasePriority(k[0], k[1])
+        else:
+            self.mSize += 1
+            self.mItems.append(el)
+            self.mElementsMap[k[0]] = self.mSize
 
-        self.mSize += 1
-        self.mItems.append(el)
-        self.mElementsMap[k[0]] = self.mSize
-
-        self.siftUp()
+            self.siftUp()
 
     def decreasePriority(self, item, priority):
         i = self.mElementsMap[item]
-        self.mItems[i].setPriority(priority)
+        if self.mItems[i][1] < 0:
+            return True
+        self.mItems[i].setPriority(self.mItems[i][1] + priority)
 
         if self.isRoot(i):
             while (2 * i) <= self.mSize:
@@ -145,26 +157,14 @@ class PriorityQueue(Heap):
                 if self.mItems[i] < self.mItems[min_child]:
                     self.swap(min_child, i)
                 i = min_child
+
         return True
 
 
     def extractMax(self):
         max_el = self.mItems[1]
-
-        self.mItems[1] = self.mItems[-1]
-
-        pos_last = self.mItems[-1].item()
-        self.mElementsMap[pos_last] = 1
-
-        self.mItems.pop()
-        if max_el[0] in self:
-            del self.mElementsMap[max_el[0]]
-
-        self.mSize -= 1
-
-        self.siftDown()
-
-        return max_el
+        if max_el[1] > 0:
+            return max_el[0]
 
     def __str__(self):
         res = ""
@@ -172,17 +172,18 @@ class PriorityQueue(Heap):
             res += str(self.mItems[i]) + "\n"
         return res
 
-
+n = int(input())
 que = PriorityQueue()
 
-while True:
+for i in range(n):
     try:
         st = input().split()
     except:
         break
-    if st[0] == 'ADD':
-        que.insert(st[1], int(st[2]))
-    elif st[0] == 'POP':
+    if st[0] == '+':
+        que.insert(st[1], 1)
         print(que.extractMax())
-    elif st[0] == 'CHANGE':
-        que.decreasePriority(st[1], int(st[2]))
+    elif st[0] == '-':
+        que.decreasePriority(st[1], -1)
+        x = que.extractMax()
+        print(0 if x is None else x)
